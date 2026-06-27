@@ -11,8 +11,8 @@ st.write("5 Minutes Engineering(Text)")
 st.markdown("5 Minutes Engineering(Markdown)")
 st.caption("5 Minutes Engineering(Caption)")
 
-st.image("D:\Sachin\Engg5min\ilaka.jpg")
-st.video("D:\Sachin\Engg5min\ilaka.mp4")
+st.image("ilaka.jpg")
+st.video("laka.mp4")
 
 st.checkbox('checkbox')
 st.button('Click button')
