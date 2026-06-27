@@ -13,7 +13,7 @@ st.markdown("5 Minutes Engineering(Markdown)")
 st.caption("5 Minutes Engineering(Caption)")
 img_dir = Path(__file__).parent 
 st.image(str(img_dir)+"/ilaka.jpg")
-st.video(str(img_dir)+"/ilaka_ss.mov")
+st.video(str(img_dir)+"/ilaka_view.mp4")
 
 
 st.checkbox('checkbox')
@@ -52,7 +52,8 @@ st.info("Information")
 st.exception(RuntimeError("RuntimeError exception"))
 
 st.sidebar.title("5 Minutes Engineering")
-st.sidebar.image("D:\Sachin\Engg5min\ilaka.jpg")
+st.sidebar.image(str(img_dir)+"/ilaka.jpg")
+
 
 df = pd.DataFrame(np.random.randn(50, 20), columns=("col %d" % i for i in range(20)))
 st.dataframe(df)
