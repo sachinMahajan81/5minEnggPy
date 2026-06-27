@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import time
+from pathlib import Path
 
  
 st.title("5 Minutes Engineering(Title)")
@@ -10,9 +11,10 @@ st.subheader("5 Minutes Engineering(Sub-Header)")
 st.write("5 Minutes Engineering(Text)")
 st.markdown("5 Minutes Engineering(Markdown)")
 st.caption("5 Minutes Engineering(Caption)")
+img_dir = Path(__file__).parent 
+st.image(str(img_dir)+"/ilaka.jpg")
+st.video(str(img_dir)+"/ilaka_ss.mov")
 
-st.image("ilaka.jpg")
-st.video("laka.mp4")
 
 st.checkbox('checkbox')
 st.button('Click button')
